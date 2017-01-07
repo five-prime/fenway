@@ -1,0 +1,35 @@
+body{}
+
+#container{
+
+}
+
+th, td{
+  text-align: center;
+  border: 1px solid gray;
+  padding: 1rem;
+
+}
+.container{
+  width: 95vw;
+  height: 50vh;
+
+
+}
+#top-left{
+border-bottom: 10px solid white;
+border-right: 10px solid white;
+
+}
+
+#visitor{
+cursor: pointer;
+border: 1px solid white;
+background-color: rgba(0,0,0,.2);
+
+}
+.on{
+border: 2px solid red;
+background-color: red;
+
+}

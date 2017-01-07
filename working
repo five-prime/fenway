@@ -1,0 +1,172 @@
+
+input = 0;
+
+$(document).ready(function(){
+//globals
+
+var teamName = -1;
+
+//increase functions
+$('#incr2').click(function(){
+
+  finput +=1;
+
+});
+//increase function
+$('#incr').click(function(){
+
+
+    input += 1;
+
+
+
+});
+//change visiting team name by clicking on cell
+$('#visitor').click(function(){
+  $('#visitor').css("background-color", "inherit");
+  $('#visitor').css("border","1px solid gray")
+//list of teams stored as variable
+  var teams =["BAL","TOR","NYY","TB ","CLE","DET","KC ","CWS","MIN","TEX","SEA","HOU","LAA","OAK","WAS","NYM","MIA","PHI","ATL","CHC","STL","PIT","MIL","CIN","LAD","SF ","COL","ARI","SD "];
+//30 teams, first index position is 0 so teams = 29
+//alphabetize
+  teams.sort();
+  if (teamName < 29){
+    teamName += 1;
+    $(this).html(teams[teamName]);
+                    }
+  else if (teamName >= 29){
+
+        teamName = -1;
+
+      };
+  });
+
+
+
+  });
+
+    function dizzle(){
+      if (input == 0){
+          $("*").removeClass('on');
+       $('.a , .1,  .g, .4').addClass('on');
+
+      }
+      else if (input == 1){  $("*").removeClass('on');
+      $('.4').addClass('on');
+
+
+      }
+      else if (input == 2){  $("*").removeClass('on');
+         $('.a , .d,  .g, #b-4, #c-4, #e-1, #f-1, #g-1').addClass('on');
+
+
+      }
+      else if (input == 3){  $("*").removeClass('on');
+         $('.a , .d,  .g, #b-4, #c-4, #e-4, #f-4, #g-4').addClass('on');
+
+
+      }
+      else if (input == 4){  $("*").removeClass('on');
+         $('.d, .4, #a-1, #b-1, #c-1').addClass('on');
+
+
+      }
+      else if (input == 5){  $("*").removeClass('on');
+         $('.a, .d, .g, #b-1, #c-1, #e-4, #f-4, #g-4').addClass('on');
+
+
+      }
+      else if (input == 6){  $("*").removeClass('on');
+         $('.a, .1, .d, .g, #e-4, #f-4, #g-4').addClass('on');
+
+
+      }
+
+      else if (input == 7){  $("*").removeClass('on');
+         $('.a, .4').addClass('on');
+
+
+      }
+
+      else if (input == 8){  $("*").removeClass('on');
+         $('.a, .d, .g, .1, .4').addClass('on');
+
+
+      }
+
+      else if (input == 9){  $("*").removeClass('on');
+
+        $('.a, .d, .4, #a-2, #a-3, #b-1, #c-1, #d-2, #d-3').addClass('on');
+        input = -1;
+
+      }
+       else {
+         console.log('hi');
+       };
+
+
+
+    };
+
+      function dizzletwo(){
+        if (input == 0){
+            $("*").removeClass('on');
+         $('.a , .1,  .g, .4').addClass('on');
+
+        }
+        else if (input == 1){  $("*").removeClass('on');
+        $('.4').addClass('on');
+
+
+        }
+        else if (input == 2){  $("*").removeClass('on');
+           $('.a , .d,  .g, #b-4, #c-4, #e-1, #f-1, #g-1').addClass('on');
+
+
+        }
+        else if (input == 3){  $("*").removeClass('on');
+           $('.a , .d,  .g, #b-4, #c-4, #e-4, #f-4, #g-4').addClass('on');
+
+
+        }
+        else if (input == 4){  $("*").removeClass('on');
+           $('.d, .4, #a-1, #b-1, #c-1').addClass('on');
+
+
+        }
+        else if (input == 5){  $("*").removeClass('on');
+           $('.a, .d, .g, #b-1, #c-1, #e-4, #f-4, #g-4').addClass('on');
+
+
+        }
+        else if (input == 6){  $("*").removeClass('on');
+           $('.a, .1, .d, .g, #e-4, #f-4, #g-4').addClass('on');
+
+
+        }
+
+        else if (input == 7){  $("*").removeClass('on');
+           $('.a, .4').addClass('on');
+
+
+        }
+
+        else if (input == 8){  $("*").removeClass('on');
+           $('.a, .d, .g, .1, .4').addClass('on');
+
+
+        }
+
+        else if (input == 9){  $("*").removeClass('on');
+
+          $('.a, .d, .4, #a-2, #a-3, #b-1, #c-1, #d-2, #d-3').addClass('on');
+          input = -1;
+
+        }
+         else {
+           console.log('hi');
+         };
+
+
+
+      };
